@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sss.options.css">
+    <style type="text/css">
+        .block {
+           display: block;
+        }
+     </style>
+     
+  </head>
+  <body>
+      
+    <div class="container"><h1>Set Your Option</h1></div>
+    <div class="container" style="margin-top: 30px;">
+    <div class="col-md-3"></div>
+        <div class="row col-md-8 columns is-vcentered"  style = "border:1px solid black;">
+            <div class="row">
+                <label class="block"><input type="radio" name="radgroup" value="1">Trade only first signal.</label>
+                <label class="block"><input type="radio" name="radgroup" value="2">Trade only last signal</label>
+                <label class="block"><input type="radio" name="radgroup" value="3">Trade only first and last</label>
+                <label class="block"><input type="radio" name="radgroup" value="4">Trade until profitable</label>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 20px;">
+    <div class="col-md-3"></div>
+    <div class="row col-md-8" style = "border:1px solid black;">
+        <div class="row">
+            <label class="block"><input type="radio" name="radgroup1" value="1">Trade until profitable</label>
+            <label class="block"><input type="radio" name="radgroup1" value="2">Stop trading with 1 loss</label>
+        </div>
+    </div>
+    </div>
+    <div class="container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <textarea class="col-md-6" id="optionstring"></textarea>
+        <div class="col-md-3"></div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8"></div>
+        <button class="btn btn-default" id="saveoption">Save</button>
+    </div>
+</div>
+  </body>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/options.js"></script>
+</html>

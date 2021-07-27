@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/sss.options.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="utf-8">
+
+
+
+</head>
+<body>
+<section class="hero   is-medium">
+    <div class="hero-head container" >
+        <header class="nav">
+
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#" target="_blank" id="link">
+                    </a>
+                    <button class="button navbar-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="nav-right nav-menu"></div>
+        </header>
+    </div>
+</section>
+
+<div class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h3 id="title" class="title">Trade Bot</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="container bd-snippet bd-is-vertical bd-is-1">
+    <div class="bd-snippet-preview">
+        <div class="container">
+            <h1 class="title" id="instruction">
+                Instruction
+            </h1>
+            <p id="description">
+                description
+            </p>
+        </div>
+    </div>
+</section>
+<section class="section">
+
+    <div id="content" class="container bd-snippet bd-is-vertical bd-is-1">
+
+
+        <div class="bd-snippet-preview">
+
+
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Trade only first signal.</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup" value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Trade only last signal</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup" value="2">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Trade only first and last</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup" value="3">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Trade only first 2 and last 2</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup" value="4">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Trade All</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup" value="5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="content" class="container bd-snippet bd-is-vertical bd-is-1">
+
+
+        <div class="bd-snippet-preview">
+
+
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Trade until profitable</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup1" value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Stop trading with 1 loss</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup1" value="2">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Trade after 1 loss</label>
+
+                <div class="control">
+                    <div class="radio">
+                        <input id = "first" type="radio" name="radgroup1" value="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div id="content" class="container bd-snippet bd-is-vertical bd-is-1">
+
+
+        <div class="bd-snippet-preview">
+
+
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">First Step Amount(%)</label>
+
+                <div class="control">
+                    <div class="text">
+                        <input class = "first_amount" type="text" name="first_" value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Second Step Amount(%)</label>
+
+                <div class="control">
+                    <div class="test">
+                        <input class = "second_amount" type="text" name="second" value="1">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id="content" class="container bd-snippet bd-is-vertical bd-is-1">
+
+
+        <div class="bd-snippet-preview">
+
+
+            <div class="field">
+                <label id="lb_translate_to" for="first" class="hidden label">Messages from telegram</label>
+
+                <div class="control">
+                    <div class="">
+                        <textarea class="textarea" id="optionstring"></textarea>
+
+                    </div>
+                </div>
+            </div>
+            <button class="button" id="saveoption">Save</button>
+            
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="  hide notification message is-info " id="notification" style ="">
+            <p id="message"></p>
+        </div>
+    </div>
+
+
+    
+</section>
+
+<script src="js/lib/jquery.min.js"></script>
+  <script src="js/options.js"></script>
+</body>
+</html>

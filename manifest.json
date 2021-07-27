@@ -1,0 +1,16 @@
+{
+    "name":"Trade Bot",
+    "description":"trade in pocket option",
+    "version":"1.0",
+    "manifest_version":3,
+    "icons":{
+        
+    },
+    "content_scripts": [ {
+        "js": [ "js/startAction.js" ],
+        "matches": [ "https://pocketoption.com/*" ],
+        "run_at": "document_start"
+     } ],
+    "permissions":["storage"],
+    "options_page":"Option.html"
+}
